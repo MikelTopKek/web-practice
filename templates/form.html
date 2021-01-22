@@ -1,0 +1,9 @@
+{% extends 'index.html' %}
+
+{% block childform %}
+<form action="/user/{{name}}/new-child" method="post">
+    <label for="childName">Input name:</label><br>
+    <input type="text" id="childName" name="childNameKey" value=""><br>
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}
