@@ -2,38 +2,24 @@ from flask import Flask, render_template, request, redirect
 
 
 app = Flask(__name__)
-
-children = {
-    'Dan': ['Stan', 'David', 'Ted']
-}
+subject = []
+students = []
+marks = []
 
 
 @app.route('/')
 def main():
-    return '<b> Hello world! </b>'
-
-
-@app.route('/temp')
-def template():
-    return render_template('index.html', name='Stan')
-
-
-@app.route('/user/<username>/', methods=['GET'])
-def user(username):
-    query_params = request.args
     return render_template(
-        'form.html',
-        name=username,
-        surname=query_params.get("surname", ''),
-        children=children.get(username, [])
+        'index.html'
     )
 
 
-@app.route('/user/<username>/new-child', methods=['POST'])
-def add_child(username):
+@app.route('/add_subject')
+def add_subject():
     request_form = request.form
-    children[username].append(request_form.get('childNameKey'))
-    return redirect(f'/user/{username}/')
+    # Добавлять в список новый предмет
+    subject.append()
+    return redirect('/')
 
 
 if __name__ == '__main__':

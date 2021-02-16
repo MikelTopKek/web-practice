@@ -4,32 +4,72 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     </style>
 </head>
 <body>
 <div class="container">
-    <h1>Hello, {{name}} {{surname}}!</h1>
-    <div>
-        <h2> {{name}}'s children: </h2>
+
+    <div class="row">
+
+        <div class="col-3 border border-dark">
+        Students
         <ul>
-            {% for child in children %}
-            <li> {{child}}</li>
-            {% endfor %}
+
+    <!--    <li> Dan</li>-->
+    <!--    <li> Steve</li>-->
+    <!--    <li> Andrew</li>-->
         </ul>
     </div>
-    <div>{% block childform %}{% endblock %}</div>
+
+        <div class="col-3 border border-dark">
+            Subjects
+            <ul>
+                <li> Math</li>
+                <li> Physics</li>
+            </ul>
+        </div>
+
+        </div>
+
+        <div class="row">
+
+    </div>
+
+
+    <div class="row">
+
+        <div class="col-1 border border-dark">
+            <ul>
+
+                <li> Dan</li>
+                <li> Steve</li>
+                <li> Andrew</li>
+            </ul>
+        </div>
+
+        <div class="col-3 border border-dark">
+        Subjects
+            <ul>
+                <li> Math Physics Drawing</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+    <div class="col"> 123 </div>
+
+    </div>
+
 </div>
 </body>
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.slim.js"
+  integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </html>
